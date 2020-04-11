@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ResourcesListComponent } from './resources-list/resources-list.component';
+import {RestApiModule} from "./rest-api/rest-api.module";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { ResourcesListComponent } from './resources-list/resources-list.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RestApiModule
   ],
   providers: [],
   bootstrap: [AppComponent]

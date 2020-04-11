@@ -1,1 +1,9 @@
-<p>resources-list works!</p>
+<div class="resources-list">
+ <ul>
+   <li class="resources-list__item" *ngFor="let resource of resourceList.resources">
+     <span>{{resource.name}}</span>
+     <span>{{resource.description}}</span>
+     <span>{{resource.amount}}</span>
+   </li>
+ </ul>
+</div>
