@@ -11,7 +11,7 @@ export class ResourcesService {
 
 
   public getResources() {
-    const url = `api/resources`;
+    const url = `api/resource`;
     return this.httpClient.get<any>(url);
   }
 }

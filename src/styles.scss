@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-  margin: 0;
-}
+@import './styles/normalize.scss';
+@import './styles/fonts/Roboto/Roboto.css';
+@import './styles/variables.scss';
+@import './styles/common.scss';

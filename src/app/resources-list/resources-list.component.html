@@ -1,9 +1,13 @@
 <div class="resources-list">
- <ul>
-   <li class="resources-list__item" *ngFor="let resource of resourceList.resources">
-     <span>{{resource.name}}</span>
-     <span>{{resource.description}}</span>
-     <span>{{resource.amount}}</span>
-   </li>
- </ul>
+  <div class="resources-list__item header-row">
+    <div class="col">Nombre</div>
+    <div class="col">Descripción</div>
+    <div class="col">Cantidad</div>
+  </div>
+
+  <div class="resources-list__item row" *ngFor="let resource of resourceList.resources">
+    <div class="col">{{resource.name}}</div>
+    <div class="col">{{resource.description}}</div>
+    <div class="col">{{resource.amount}}</div>
+  </div>
 </div>
